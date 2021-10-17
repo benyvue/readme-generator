@@ -1,70 +1,83 @@
-// TODO: Include packages needed for this application
-const fs = require('fs');
-// TODO: Create an array of questions for user input
+// this requires/calls inquirer
+const inquirer = require('inquirer');
+// this requires the generateMarkdown in ifle
+const generateMarkdown = require('./utils/generateMarkdown.js')
+// this requires/calls file system
+const fs = require('fs')
+// array of questions for user
 const questions = [
     {
         type: 'input',
-        name: 'title',
-        message: 'What is the title of your project?'
+        name: 'Title',
+        message: 'What is the title of your project? (REQUIRED)',
+    },
+    {
+        type: 'input',
+        name: 'Description',
+        message: 'Please provide a description of your project. (REQUIRED)',
+    },
+    {
+        type: 'checkbox',
+        name: 'Contents',
+        choices: ['Title', 'Description', 'Table of Contents', 'Installations', 'Usage', 'License', 'Contributors', 'Testing', 'GitHub Repo', 'Email for question inquiries'],
+        message: 'Please select what you would like to add to your table of contents. Press enter to not include a table of contents.',
 
     },
     {
         type: 'input',
-        name: 'description',
-        message: 'Please write a short description of your project here:'
-
+        name: 'Installation',
+        message: 'Please provide required installations for this application.',
     },
     {
         type: 'input',
-        name: 'installation',
-        message: 'How is your software installed?'
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'How is your software used?'
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'How is your software used?'
+        name: 'Usage',
+        message: 'Please provide the usage instructions.',
     },
     {
         type: 'list',
-        name: 'license',
-        message: "What kind of license does your project have?",
-        choices: ['MIT', 'Apache', 'GPL']
+        name: 'License',
+        choices: ['Apache License 2.0', ' MIT License', 'Eclipse Public License 2.0', 'Mozilla Public License 2.0'],
+        message: 'Select the type of license.',
     },
     {
         type: 'input',
-        name: 'contributions',
-        message: 'Where can people contribute to this project?'
+        name: 'Contributors',
+        message: 'Please provide names of contributing members to your application.'
     },
     {
         type: 'input',
-        name: 'test',
-        message: 'How can a user test your software?'
+        name: 'Test',
+        message: 'Please provide testing instructions for this application.'
     },
     {
         type: 'input',
-        name: 'github',
-        message: 'What is your GitHub user name?'
+        name: 'Github',
+        message: 'What is your GitHub username?',
     },
     {
         type: 'input',
-        name: 'email',
-        message: 'What is your email address?'
-    },
-
+        name: 'Email',
+        message: 'Please provide your email for inquiries regarding your application.',
+    }
 ];
 
+// function to write README file
+function writeToFile(fileName, data) {
 
+    return fs.writeFileSync(fileName, data)
+}
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function to initialize program
+function init() {
+    // initiates questions object prompt
+    inquirer.prompt(questions)
+        // writes file to READMEGENERATED.md using data from generateMarkdown
+        .then((data) => writeToFile('READMEGENERATED.md', generateMarkdown(data)))
+        // once printed w/o erros succesful comand  is printed
+        .then(() => console.log("README successfully written."))
+        // this will print any erros in the command line, if any.
+        .catch((err) => console.log(err))
+}
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
+// function call to initialize program
 init();
