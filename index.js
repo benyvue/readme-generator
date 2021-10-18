@@ -22,6 +22,12 @@ const questions = [
         }
     },
     {
+        type: 'checkbox',
+        name: 'language',
+        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node'],
+        message: 'What did you build this project with?'
+    },
+    {
         type: 'input',
         name: 'Description',
         message: 'Please provide a description of your project. (REQUIRED)',
