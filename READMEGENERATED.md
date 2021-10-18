@@ -1,37 +1,37 @@
-# undefined
+# Ben is coolest
+  undefined
 
   ## Table of Contents
   * [Description](#Description)
   * [Installation](#Installation-Instructions)
   * [Usage Instructions](#Usage-Instructions)
-  * [License](#License)
+  * [License](#license)
   * [Contributing Members](#Contributing-Members)
   * [Testing](#Testing)    
   * [Questions/Inquiries](#Questions/Inquiries)
 
   ## Description
-  as;dlkfjsal;df
+  Coolio
 
   ## Installation Instructions 
-  blbablablalba
+  cooliest
 
   ## Usage Instructions
-  blablablalblablab
+  cooliest
 
   ## License
-   MIT License
+    
+  This project is licensed under [ MIT License]undefined
 
   ## Contributing Members
-  Ben Vue
+  cooliest
 
   ## Testing 
-   blab ablablalb
-
-  ## Questions/Inquiries 
+   cooliset
 
   ### GitHub Profile
   [GitHub Profile](http://github.com/benyvue)
 
   ### Email
-  bvue012@gmail.com
+  Please reach me at the provided email with any questions. bvue012@gmail.com
   

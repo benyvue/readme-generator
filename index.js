@@ -1,8 +1,8 @@
 // modules for app
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js')
-const licenseBadge = require('./utils/generateMarkdown.js')
-const fs = require('fs')
+const fs = require('fs');
+const { licenseBadge, generateMarkdown } = require('./utils/generateMarkdown.js');
+
 
 
 
@@ -69,9 +69,9 @@ const questions = [
     },
     {
         type: 'list',
-        name: 'License',
-        choices: ['Apache License 2.0', ' MIT License', 'Eclipse Public License 2.0', 'Mozilla Public License 2.0', 'GNU gpl'],
-        message: 'Select the license this application is covered under, if no license press enter.',
+        name: 'license',
+        choices: ['Apache License 2.0', ' MIT License', 'Eclipse Public License 2.0', 'Mozilla Public License 2.0', 'GNU gpl', 'No License'],
+        message: 'Select the license this application is covered under.',
     },
     {
         type: 'input',
@@ -135,7 +135,7 @@ function init() {
         .then(() => console.log("README successfully written."))
         // this will print any erros in the command line, if any.
         .catch((err) => console.log(err))
-}
+};
 
 // function call to initialize program
 init();

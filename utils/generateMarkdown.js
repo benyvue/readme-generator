@@ -35,9 +35,10 @@ function licenseLink(license) {
 };
 
 
-
+// returns license to readme section
+//returns empty string if no license
 function licenseSection(license) {
-  if (license !== '') {
+  if (license !== 'No License') {
     return `## License
     
   This project is licensed under [${license}]` + licenseLink(license)
@@ -46,7 +47,7 @@ function licenseSection(license) {
 };
 
 function licenseTable(license) {
-  if(license !== '') {
+  if(license !== 'No License') {
     return `* [License](#license)`
   }
   return ''
@@ -56,14 +57,14 @@ function licenseTable(license) {
 
 // function that creates/generates markdown for READme
 function generateMarkdown(data) {
-  return `# ${data.title}
-  ${licenseBadge(data.License)}
+  return `# ${data.Title}
+  ${licenseBadge(data.license)}
 
   ## Table of Contents
   * [Description](#Description)
   * [Installation](#Installation-Instructions)
   * [Usage Instructions](#Usage-Instructions)
-  * ${licenseTable(data.license)}
+  ${licenseTable(data.license)}
   * [Contributing Members](#Contributing-Members)
   * [Testing](#Testing)    
   * [Questions/Inquiries](#Questions/Inquiries)
@@ -89,9 +90,9 @@ function generateMarkdown(data) {
   [GitHub Profile](http://github.com/${data.Github})
 
   ### Email
-  ${data.Email}
+  Please reach me at the provided email with any questions. ${data.Email}
   
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown};
