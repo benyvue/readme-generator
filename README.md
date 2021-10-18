@@ -38,5 +38,6 @@
   ### Email
   Please reach me at the provided email with any questions. bvue012@gmail.com
 
+  ### Preview of app in command line
   ![READMEGENERATOR](./images/readme-generator.PNG)
   
