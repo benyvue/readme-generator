@@ -12,6 +12,9 @@
 
   ## Built with:
   Javascript, node.js, ES6
+  
+  ## Preview of app in command line
+  ![READMEGENERATOR](./images/readme-generator.PNG)
 
   ## Description
   The readme-generator is a command line app that prompts users for information to add onto a readme. After completing all prompts the readme-generator app then generates a README file with fields that makes a great readme.
@@ -21,6 +24,9 @@
 
   ## Usage Instructions
   Startup readme-generator, with a command prompt interface then type "npm install" to install packages for node modules. After module installations, run the application from the command line by typing in "node index.js" and proceed through the command prompts to create your README file.
+
+  ## Instructions Video
+  Please view the video on how to use the readme generator for a better understanding on how it works. (https://watch.screencastify.com/v/gAz9tqhsbR1Xh0BfnyA1)
 
   ## License
     
@@ -38,6 +44,6 @@
   ### Email
   Please reach me at the provided email with any questions. bvue012@gmail.com
 
-  ### Preview of app in command line
+  ## Preview of app in command line
   ![READMEGENERATOR](./images/readme-generator.PNG)
   

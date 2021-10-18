@@ -1,4 +1,4 @@
-# Coolest
+# readme-generator
   undefined
 
   ## Table of Contents
@@ -11,22 +11,16 @@
   * [Questions/Inquiries](#Questions/Inquiries)
 
   ## Built with
-  * [JavaScript](#JavaScript)
-  * [HTML](#HTML)
-  * [CSS](#CSS)
-  * [ES6](#ES6)
-  * [jQuery](#jQuery)    
-  * [Bootstrap](#Bootstrap)
-  * [Node](#Node)
+  Javascript, ES6
 
   ## Description
-  Coolest
+  Used to generate README files
 
   ## Installation Instructions 
-  coolest
+  blablabalba
 
   ## Usage Instructions
-  coolest
+  Open app
 
   ## License
     
@@ -36,7 +30,7 @@
   Ben Vue
 
   ## Testing 
-   coolest
+   N/A
 
   ### GitHub Profile
   [GitHub Profile](http://github.com/benyvue)
