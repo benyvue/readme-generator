@@ -38,5 +38,5 @@
   ### Email
   Please reach me at the provided email with any questions. bvue012@gmail.com
 
-  ![readme-generator](./images/readme-generator.png)
+  ![READMEGENERATOR](./images/readme-generator.PNG)
   
