@@ -70,13 +70,7 @@ function generateMarkdown(data) {
   * [Questions/Inquiries](#Questions/Inquiries)
 
   ## Built with
-  * [JavaScript](#JavaScript)
-  * [HTML](#HTML)
-  * [CSS](#CSS)
-  * [ES6](#ES6)
-  * [jQuery](#jQuery)    
-  * [Bootstrap](#Bootstrap)
-  * [Node](#Node)
+  ${data.languages}
 
   ## Description
   ${data.Description}

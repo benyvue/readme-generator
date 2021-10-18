@@ -22,10 +22,17 @@ const questions = [
         }
     },
     {
-        type: 'checkbox',
-        name: 'language',
-        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node'],
-        message: 'What did you build this project with?'
+        type: 'input',
+        name: 'languages',
+        message: 'What coding languages/coding tools did you build this project with? e.g. javascript, html, css, etc. (REQUIRED)',
+        validate: languagesInput => {
+            if (languagesInput) {
+                return true;
+            } else {
+              console.log('Please input what you built the project with.');
+              return false;
+            }
+        }
     },
     {
         type: 'input',
